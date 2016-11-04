@@ -1,4 +1,5 @@
-try : head.o
-	cc *.o -o project
-	clear
-		
+try : head.o tail.o
+head:
+	gcc -Wall -o head head.c
+tail:
+	gcc -Wall -o tail tail.c
